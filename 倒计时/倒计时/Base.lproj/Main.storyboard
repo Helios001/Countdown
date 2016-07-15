@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yc-nh-zX3">
+                                <rect key="frame" x="213" y="97" width="174" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.059158666475113919" blue="0.012219306927530926" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="Iex-Sr-HfP"/>
+                                    <constraint firstAttribute="height" constant="30" id="dcr-9D-iHV"/>
+                                </constraints>
+                                <state key="normal" title="点我获取验证码">
+                                    <color key="titleColor" red="1" green="0.96695536459999998" blue="0.97407369580000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="timeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yDA-pK-pOO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="天" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjD-DW-Zit">
+                                <rect key="frame" x="100" y="478" width="50" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ERc-hv-3ra"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcA-vi-X0O">
+                                <rect key="frame" x="160" y="479" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2X-VY-0Tw">
+                                <rect key="frame" x="220" y="479" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jE-kw-nBc">
+                                <rect key="frame" x="280" y="479" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IjD-DW-Zit" secondAttribute="bottom" constant="100" id="4dW-jR-LI2"/>
+                            <constraint firstItem="2jE-kw-nBc" firstAttribute="top" secondItem="U2X-VY-0Tw" secondAttribute="top" id="7Fo-vP-ZSK"/>
+                            <constraint firstItem="hcA-vi-X0O" firstAttribute="leading" secondItem="IjD-DW-Zit" secondAttribute="trailing" constant="10" id="8Md-nP-pcA"/>
+                            <constraint firstItem="hcA-vi-X0O" firstAttribute="width" secondItem="IjD-DW-Zit" secondAttribute="width" id="Ato-Bl-0aj"/>
+                            <constraint firstItem="hcA-vi-X0O" firstAttribute="top" secondItem="IjD-DW-Zit" secondAttribute="top" id="DgH-90-RoU"/>
+                            <constraint firstItem="U2X-VY-0Tw" firstAttribute="top" secondItem="hcA-vi-X0O" secondAttribute="top" id="HDZ-ii-sGe"/>
+                            <constraint firstItem="U2X-VY-0Tw" firstAttribute="leading" secondItem="hcA-vi-X0O" secondAttribute="trailing" constant="10" id="WkU-rg-uA5"/>
+                            <constraint firstItem="U2X-VY-0Tw" firstAttribute="width" secondItem="hcA-vi-X0O" secondAttribute="width" id="b9V-d0-x2I"/>
+                            <constraint firstItem="1yc-nh-zX3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="77" id="qFb-KF-673"/>
+                            <constraint firstItem="IjD-DW-Zit" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="rmP-mi-r5I"/>
+                            <constraint firstItem="1yc-nh-zX3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tH2-xF-1d3"/>
+                            <constraint firstItem="2jE-kw-nBc" firstAttribute="leading" secondItem="U2X-VY-0Tw" secondAttribute="trailing" constant="10" id="zaY-82-Wsh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="days" destination="IjD-DW-Zit" id="td1-yp-aiZ"/>
+                        <outlet property="hours" destination="hcA-vi-X0O" id="hNa-fx-g4M"/>
+                        <outlet property="minutes" destination="U2X-VY-0Tw" id="mYR-6M-gxs"/>
+                        <outlet property="seconds" destination="2jE-kw-nBc" id="dCB-ea-xSg"/>
+                        <outlet property="timeBtn" destination="1yc-nh-zX3" id="gIV-aI-xe2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="339"/>
+        </scene>
+    </scenes>
+</document>
